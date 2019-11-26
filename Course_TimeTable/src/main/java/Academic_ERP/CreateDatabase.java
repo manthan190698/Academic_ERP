@@ -23,19 +23,19 @@ public class CreateDatabase {
         List<Course> IMtcsCourses = new ArrayList<>();
         List<Course> MtecCourses = new ArrayList<>();
 
-        String []MtcsCid = {"CS101","CS102","CS103","CS104","CS105","CS106"};
-        String []IMtcsCid = {"CS501","CS502","CS503","CS504","CS505","CS506"};
-        String []MtecCid = {"EC101","EC102","EC103","EC104","EC105","EC106"};
+        String []MtcsCid = {"CS101","CS102","CS103","CS104","CS105","CS106","CS107"};
+        String []IMtcsCid = {"CS501","CS502","CS503","CS504","CS505","CS506","CS507"};
+        String []MtecCid = {"EC101","EC102","EC103","EC104","EC105","EC106","EC507"};
 
-        String []MtcsCnames = {"Algorithms","Machine Learning","Networks","MML","Discreet Mathematics","System Software"};
-        String []IMtcsCnames = {"Data Structures","Operating Systems","Computer Organization","Computer Networks","Maths","Compiler Design"};
-        String []MtecCnames = {"VLSI","Networks","Analog Design","Control Systems","Digital Communication","Antenna Theory"};
+        String []MtcsCnames = {"Algorithms","Machine Learning","Networks","MML","Discreet Mathematics","System Software","DevOps"};
+        String []IMtcsCnames = {"Data Structures","Operating Systems","Computer Organization","Computer Networks","Maths","Compiler Design","C++"};
+        String []MtecCnames = {"VLSI","Networks","Analog Design","Control Systems","Digital Communication","Antenna Theory","Field theory"};
 
-        String []MtcsFnames = {"Muralidhara V N","Neelam Sinha","Yashwanth","Ramasubhramaniam","Rajesh","R Chandrashekar"};
-        String []IMtcsFnames = {"Muralidhara V N","Vikram Pai","Akshatha Shetty","Naveen Rai","Venkateshwara Bhat","Sidhaarth Mallya"};
-        String []MtecFnames = {"Varun Rao","Gopalakrishna Adiga","U B Mahadeva Swamy","Sudarshan Patil Kulkarni","Tom Cruise","Ramya Bhat"};
+        String []MtcsFnames = {"Muralidhara V N","Neelam Sinha","Yashwanth","Ramasubhramaniam","Rajesh","R Chandrashekar","Thangraju"};
+        String []IMtcsFnames = {"Muralidhara V N","Vikram Pai","Akshatha Shetty","Naveen Rai","Venkateshwara Bhat","Sidhaarth Mallya","Random guy"};
+        String []MtecFnames = {"Varun Rao","Gopalakrishna Adiga","U B Mahadeva Swamy","Sudarshan Patil Kulkarni","Tom Cruise","Ramya Bhat","Rakesh"};
 
-        int noCoursesPerSem = 6;
+        int noCoursesPerSem = 7;
 
         for(int i=0;i<noCoursesPerSem;i++){
             Course MtcsCourse = new Course(MtcsCid[i],MtcsCnames[i],MtcsFnames[i]);
@@ -115,7 +115,7 @@ public class CreateDatabase {
 
         /* MTech cs time table */
         slots.get(0).addCourseToSlot(MtcsCourses.get(0));
-        slots.get(1).addCourseToSlot(MtcsCourses.get(4));
+        slots.get(1).addCourseToSlot(MtcsCourses.get(6));
         slots.get(4).addCourseToSlot(MtcsCourses.get(3));
         slots.get(4).addCourseToSlot(MtcsCourses.get(2)); //changed
         slots.get(6).addCourseToSlot(MtcsCourses.get(4));
