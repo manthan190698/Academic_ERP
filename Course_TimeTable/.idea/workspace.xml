@@ -5,9 +5,59 @@
       <artifact name="Course_TimeTable:war exploded" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ea6e39e-01c9-4503-89d9-d7fd8e591bda" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="9ea6e39e-01c9-4503-89d9-d7fd8e591bda" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/Academic_ERP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Academic_ERP/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/controllers/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Academic_ERP/controllers/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/services/CourseServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Academic_ERP/services/CourseServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Course_TimeTable.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Course_TimeTable.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Course_TimeTable/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/CreateDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/CreateDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/controllers/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/controllers/CourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/services/CourseServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/services/CourseServicesImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/util/SessionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/util/SessionUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/hibernate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Academic_ERP/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Academic_ERP/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Academic_ERP/CreateDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Academic_ERP/CreateDatabase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Academic_ERP/controllers/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Academic_ERP/controllers/CourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Academic_ERP/services/CourseServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Academic_ERP/services/CourseServicesImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Academic_ERP/util/SessionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Academic_ERP/util/SessionUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,8 +69,12 @@
         <option value="Interface" />
         <option value="HTTP Request" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -30,46 +84,53 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="1Tskkr0mosJNeSO1Le1HlL4w2El" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../academic-erp/pom.xml" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Academic_ERP" />
+      <recent name="Academic_ERP.bean" />
+      <recent name="Academic_ERP.services" />
+      <recent name="Academic_ERP.controllers" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.27">
+  <component name="RunManager" selected="JUnit.CourseServicesImplTest.findCourseBySlotInDomain2">
     <configuration name="App" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Academic_ERP.App" />
       <module name="Course_TimeTable" />
@@ -84,8 +145,98 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Course_TimeTable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Academic_ERP.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Academic_ERP.controllers" />
+      <option name="MAIN_CLASS_NAME" value="Academic_ERP.controllers.CourseControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseControllerTest.getCoursesInSlot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Course_TimeTable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Academic_ERP.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Academic_ERP.controllers" />
+      <option name="MAIN_CLASS_NAME" value="Academic_ERP.controllers.CourseControllerTest" />
+      <option name="METHOD_NAME" value="getCoursesInSlot" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseServicesImplTest.findCourseBySlotInDomain2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Course_TimeTable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Academic_ERP.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Academic_ERP.services" />
+      <option name="MAIN_CLASS_NAME" value="Academic_ERP.services.CourseServicesImplTest" />
+      <option name="METHOD_NAME" value="findCourseBySlotInDomain2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Course_MinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Course_TimeTable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Academic_ERP.bean.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Academic_ERP.bean" />
+      <option name="MAIN_CLASS_NAME" value="Academic_ERP.bean.Course_MinTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SlotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Course_TimeTable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Academic_ERP.bean.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Academic_ERP.bean" />
+      <option name="MAIN_CLASS_NAME" value="Academic_ERP.bean.SlotTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.27" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.27" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Course_TimeTable_war_exploded/" />
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Course_TimeTable:war exploded">
@@ -161,8 +312,23 @@
       <item itemvalue="Application.Create Database" />
       <item itemvalue="Application.App" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.27" />
+      <item itemvalue="JUnit.CourseControllerTest" />
+      <item itemvalue="JUnit.CourseControllerTest.getCoursesInSlot" />
+      <item itemvalue="JUnit.Course_MinTest" />
+      <item itemvalue="JUnit.SlotTest" />
+      <item itemvalue="JUnit.CourseServicesImplTest.findCourseBySlotInDomain2" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CourseServicesImplTest.findCourseBySlotInDomain2" />
+        <item itemvalue="JUnit.SlotTest" />
+        <item itemvalue="JUnit.Course_MinTest" />
+        <item itemvalue="JUnit.CourseControllerTest.getCoursesInSlot" />
+        <item itemvalue="JUnit.CourseControllerTest" />
+      </list>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -188,10 +354,142 @@
       <workItem from="1574684084656" duration="6568000" />
       <workItem from="1574695784921" duration="52000" />
       <workItem from="1574740379378" duration="18024000" />
+      <workItem from="1603189933936" duration="5045000" />
+      <workItem from="1603276258065" duration="3536000" />
+      <workItem from="1604231899802" duration="169000" />
+      <workItem from="1604232241024" duration="1235000" />
+      <workItem from="1604295763469" duration="1728000" />
+      <workItem from="1605436497452" duration="114000" />
+      <workItem from="1605716853184" duration="2919000" />
+      <workItem from="1605771192028" duration="1558000" />
+      <workItem from="1605780958466" duration="11386000" />
+      <workItem from="1605847613530" duration="19296000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="505" y="286" width="402" height="220" key="#Chrome_Settings" timestamp="1603192998656">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="505" y="286" width="402" height="220" key="#Chrome_Settings/67.27.1299.741@67.27.1299.741" timestamp="1603192998656" />
+    <state x="199" y="27" width="1024" height="741" key="#Project_Structure" timestamp="1603190743061">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="199" y="27" width="1024" height="741" key="#Project_Structure/67.27.1299.741@67.27.1299.741" timestamp="1603190743061" />
+    <state x="486" y="278" width="450" height="243" key="#TomEE_Server" timestamp="1603191214060">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="486" y="278" width="450" height="243" key="#TomEE_Server/67.27.1299.741@67.27.1299.741" timestamp="1603191214060" />
+    <state x="487" y="276" width="453" height="243" key="#Tomcat_Server" timestamp="1603193793014">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="487" y="276" width="453" height="243" key="#Tomcat_Server/67.27.1299.741@67.27.1299.741" timestamp="1603193793014" />
+    <state x="478" y="180" width="467" height="432" key="#Web_Browsers" timestamp="1603193005109">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="478" y="180" width="467" height="432" key="#Web_Browsers/67.27.1299.741@67.27.1299.741" timestamp="1603193005109" />
+    <state x="174" y="27" width="1084" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604297073952">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="174" y="27" width="1084" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1299.741@67.27.1299.741" timestamp="1604297073952" />
+    <state x="424" y="78" width="573" height="638" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1603194853203">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="424" y="78" width="573" height="638" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/67.27.1299.741@67.27.1299.741" timestamp="1603194853203" />
+    <state x="496" y="141" width="424" height="513" key="FileChooserDialogImpl" timestamp="1605800896148">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="496" y="141" width="424" height="513" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1605800896148" />
+    <state width="1253" height="170" key="GridCell.Tab.0.bottom" timestamp="1605889413051">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="170" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1605889413051" />
+    <state width="1253" height="170" key="GridCell.Tab.0.center" timestamp="1605889413047">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="170" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1605889413047" />
+    <state width="1253" height="170" key="GridCell.Tab.0.left" timestamp="1605889413046">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="170" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1605889413046" />
+    <state width="1253" height="170" key="GridCell.Tab.0.right" timestamp="1605889413049">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="170" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1605889413049" />
+    <state width="1253" height="219" key="GridCell.Tab.1.bottom" timestamp="1605863452445">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="219" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1605863452445" />
+    <state width="1253" height="219" key="GridCell.Tab.1.center" timestamp="1605863452444">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="219" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1605863452444" />
+    <state width="1253" height="219" key="GridCell.Tab.1.left" timestamp="1605863452444">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="219" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1605863452444" />
+    <state width="1253" height="219" key="GridCell.Tab.1.right" timestamp="1605863452444">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="219" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1605863452444" />
+    <state width="873" height="174" key="GridCell.Tab.2.bottom" timestamp="1604315978328">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="873" height="174" key="GridCell.Tab.2.bottom/67.27.1299.741@67.27.1299.741" timestamp="1604315978328" />
+    <state width="873" height="174" key="GridCell.Tab.2.center" timestamp="1604315978328">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="873" height="174" key="GridCell.Tab.2.center/67.27.1299.741@67.27.1299.741" timestamp="1604315978328" />
+    <state width="873" height="174" key="GridCell.Tab.2.left" timestamp="1604315978327">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="873" height="174" key="GridCell.Tab.2.left/67.27.1299.741@67.27.1299.741" timestamp="1604315978327" />
+    <state width="873" height="174" key="GridCell.Tab.2.right" timestamp="1604315978328">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="873" height="174" key="GridCell.Tab.2.right/67.27.1299.741@67.27.1299.741" timestamp="1604315978328" />
+    <state width="929" height="175" key="GridCell.Tab.3.bottom" timestamp="1603194984498">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="929" height="175" key="GridCell.Tab.3.bottom/67.27.1299.741@67.27.1299.741" timestamp="1603194984498" />
+    <state width="929" height="175" key="GridCell.Tab.3.center" timestamp="1603194984498">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="929" height="175" key="GridCell.Tab.3.center/67.27.1299.741@67.27.1299.741" timestamp="1603194984498" />
+    <state width="929" height="175" key="GridCell.Tab.3.left" timestamp="1603194984498">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="929" height="175" key="GridCell.Tab.3.left/67.27.1299.741@67.27.1299.741" timestamp="1603194984498" />
+    <state width="929" height="175" key="GridCell.Tab.3.right" timestamp="1603194984498">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="929" height="175" key="GridCell.Tab.3.right/67.27.1299.741@67.27.1299.741" timestamp="1603194984498" />
+    <state x="199" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1604315974531">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="199" y="27" width="1024" height="741" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1604315974531" />
+    <state x="482" y="99" width="499" height="594" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1605891144544">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="482" y="99" width="499" height="594" key="com.intellij.testIntegration.createTest.CreateTestDialog/67.27.1299.741@67.27.1299.741" timestamp="1605891144544" />
+    <state x="67" y="27" width="1289" height="741" key="new project wizard" timestamp="1605436606110">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="67" y="27" width="1289" height="741" key="new project wizard/67.27.1299.741@67.27.1299.741" timestamp="1605436606110" />
   </component>
 </project>

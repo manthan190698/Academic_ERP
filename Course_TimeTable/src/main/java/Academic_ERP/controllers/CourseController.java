@@ -33,10 +33,19 @@ public class    CourseController {
         List<Student> enrolledStudents = new CourseServicesImpl().findStudentsEnrolled(cid);
 
         System.out.println("List of students enrolled in "+cid);
-        for(Student s:enrolledStudents){
+
+
+        int len_enrolledStudents = enrolledStudents.size();
+        for(int i=0;i<len_enrolledStudents;i++){
+            System.out.println(enrolledStudents.get(i));
+            enrolledStudentsRet.add(new Student_Min(enrolledStudents.get(i).getRollNo(),
+                    enrolledStudents.get(i).getName()));
+        }
+
+        /*for(Student s:enrolledStudents){
             System.out.println(s);
             enrolledStudentsRet.add(new Student_Min(s.getRollNo(),s.getName()));
-        }
+        }*/
 
         return enrolledStudentsRet;
     }
@@ -53,10 +62,22 @@ public class    CourseController {
 
         List<Course> courses = cser.findCourseBySlotInDomain(slotNo,dname);
         System.out.println("Courses in slot:");
+
+        int len_courses = courses.size();
+        for(int i=0;i<len_courses;i++){
+            System.out.println(courses.get(i));
+            coursesAlloted.add(new Course_Min(courses.get(i).getCid(),
+                    courses.get(i).getName(),
+                    courses.get(i).getFacultyName(),
+                    slotNo));
+        }
+        /*
         for(Course c:courses){
             System.out.println(c);
             coursesAlloted.add(new Course_Min(c.getCid(),c.getName(),c.getFacultyName(),slotNo));
         }
+
+         */
 
         return coursesAlloted;
     }

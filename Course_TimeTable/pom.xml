@@ -22,8 +22,42 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>1.5.2</version>
+                <dependencies>
+                    <!-- https://mvnrepository.com/artifact/org.pitest/pitest-junit5-plugin -->
+                    <dependency>
+                        <groupId>org.pitest</groupId>
+                        <artifactId>pitest-junit5-plugin</artifactId>
+                        <version>0.12</version>
+                    </dependency>
+
+                </dependencies>
+            </plugin>
+
+            <plugin>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>1.5.2</version>
+                <configuration>
+                    <targetClasses>
+                        <param>Academic_ERP.*</param>
+                    </targetClasses>
+                    <targetTests>
+                        <param>Academic_ERP.*</param>
+                    </targetTests>
+                    <mutators>
+                        <mutator>ROR</mutator>
+                        <mutator>AOR</mutator>
+                        <mutator>UOI</mutator>
+                    </mutators>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
 
     <dependencyManagement>
         <dependencies>
@@ -77,10 +111,44 @@
             <artifactId>jquery</artifactId>
             <version>3.2.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.7.0</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.7.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
     <properties>
         <jersey.version>2.16</jersey.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jackson.version>2.10.0</jackson.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <assertj.version>3.14.0</assertj.version>
+        <junit.platform.version>1.6.0</junit.platform.version>
+        <junit.version>5.6.1</junit.version>
+        <pitest.version>1.4.11</pitest.version>
+        <junit.jupiter.version>5.4.0</junit.jupiter.version>
     </properties>
 </project>

@@ -123,15 +123,28 @@ public class App {
 
         List<Course> courses = new CourseServicesImpl().findCourseBySlotInDomain(5,"MTECH CSE");
 
+        int len_courses = courses.size();
+        for(int i=0;i<len_courses;i++) {
+            System.out.println(courses.get(i));
+        }
+        /*
         for (Course course:courses){
             System.out.println(course);
         }
+         */
 
         String cname = "CS105";
         List<Student> enrolled = new CourseServicesImpl().findStudentsEnrolled(cname);
         System.out.println("List of students enrolled in "+cname);
+
+        int len_enrolled = enrolled.size();
+        for(int i=0;i<len_courses;i++){
+            System.out.println(enrolled.get(i));
+        }
+        /*
         for(Student s:enrolled){
             System.out.println(s);
         }
+         */
     }
 }

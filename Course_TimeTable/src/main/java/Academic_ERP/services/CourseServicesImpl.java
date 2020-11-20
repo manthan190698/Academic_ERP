@@ -35,14 +35,15 @@ public class CourseServicesImpl implements CourseServices {
         List<Course> domainOffered = ((Domain)session.bySimpleNaturalId(Domain.class).load(dname)).getCoursesOffered();
         List<Course> courseInSlot  = ((Slot)session.bySimpleNaturalId(Slot.class).load(slotNo)).getCoursesAlloted();
 
-        for(Course dof:domainOffered){
-            for (Course cis:courseInSlot){
-                if(dof.getCid().equals(cis.getCid()))
-                    coursesAlloted.add(dof);
+        int len_domainOffered = domainOffered.size();
+        int len_courseInSlot = courseInSlot.size();
+
+        for(int i=0;i<len_domainOffered;i++) {
+            for (int j = 0; j < len_courseInSlot; j++) {
+                if (domainOffered.get(i).getCid().equals(courseInSlot.get(j).getCid()))
+                    coursesAlloted.add(domainOffered.get(i));
             }
         }
-
-
         return coursesAlloted;
     }
 
