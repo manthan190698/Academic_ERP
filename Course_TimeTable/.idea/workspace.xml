@@ -28,35 +28,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ea6e39e-01c9-4503-89d9-d7fd8e591bda" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/Academic_ERP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Academic_ERP/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/controllers/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Academic_ERP/controllers/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/services/CourseServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Academic_ERP/services/CourseServicesImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Course_TimeTable.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Course_TimeTable.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Course_TimeTable/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/CreateDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/CreateDatabase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/controllers/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/controllers/CourseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/services/CourseServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/services/CourseServicesImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/util/SessionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/Academic_ERP/util/SessionUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/Course_TimeTable/WEB-INF/classes/hibernate.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Academic_ERP/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Academic_ERP/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Academic_ERP/CreateDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Academic_ERP/CreateDatabase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Academic_ERP/controllers/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Academic_ERP/controllers/CourseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Academic_ERP/services/CourseServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Academic_ERP/services/CourseServicesImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Academic_ERP/util/SessionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Academic_ERP/util/SessionUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Academic_ERP/controllers/CourseControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Academic_ERP/controllers/CourseControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +103,7 @@
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CourseServicesImplTest.findCourseBySlotInDomain2">
+  <component name="RunManager" selected="JUnit.CourseControllerTest.getCoursesInSlot">
     <configuration name="App" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Academic_ERP.App" />
       <module name="Course_TimeTable" />
@@ -145,15 +118,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -311,20 +282,20 @@
     <list>
       <item itemvalue="Application.Create Database" />
       <item itemvalue="Application.App" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.27" />
       <item itemvalue="JUnit.CourseControllerTest" />
       <item itemvalue="JUnit.CourseControllerTest.getCoursesInSlot" />
       <item itemvalue="JUnit.Course_MinTest" />
       <item itemvalue="JUnit.SlotTest" />
       <item itemvalue="JUnit.CourseServicesImplTest.findCourseBySlotInDomain2" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.27" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CourseControllerTest.getCoursesInSlot" />
+        <item itemvalue="JUnit.CourseControllerTest" />
         <item itemvalue="JUnit.CourseServicesImplTest.findCourseBySlotInDomain2" />
         <item itemvalue="JUnit.SlotTest" />
         <item itemvalue="JUnit.Course_MinTest" />
-        <item itemvalue="JUnit.CourseControllerTest.getCoursesInSlot" />
-        <item itemvalue="JUnit.CourseControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -363,7 +334,8 @@
       <workItem from="1605716853184" duration="2919000" />
       <workItem from="1605771192028" duration="1558000" />
       <workItem from="1605780958466" duration="11386000" />
-      <workItem from="1605847613530" duration="19296000" />
+      <workItem from="1605847613530" duration="19895000" />
+      <workItem from="1605938890326" duration="3597000" />
     </task>
     <servers />
   </component>
@@ -415,38 +387,38 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="496" y="141" width="424" height="513" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1605800896148" />
-    <state width="1253" height="170" key="GridCell.Tab.0.bottom" timestamp="1605889413051">
+    <state width="1253" height="170" key="GridCell.Tab.0.bottom" timestamp="1605942707715">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="170" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1605889413051" />
-    <state width="1253" height="170" key="GridCell.Tab.0.center" timestamp="1605889413047">
+    <state width="1253" height="170" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1605942707715" />
+    <state width="1253" height="170" key="GridCell.Tab.0.center" timestamp="1605942707712">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="170" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1605889413047" />
-    <state width="1253" height="170" key="GridCell.Tab.0.left" timestamp="1605889413046">
+    <state width="1253" height="170" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1605942707712" />
+    <state width="1253" height="170" key="GridCell.Tab.0.left" timestamp="1605942707711">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="170" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1605889413046" />
-    <state width="1253" height="170" key="GridCell.Tab.0.right" timestamp="1605889413049">
+    <state width="1253" height="170" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1605942707711" />
+    <state width="1253" height="170" key="GridCell.Tab.0.right" timestamp="1605942707714">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="170" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1605889413049" />
-    <state width="1253" height="219" key="GridCell.Tab.1.bottom" timestamp="1605863452445">
+    <state width="1253" height="170" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1605942707714" />
+    <state width="1253" height="219" key="GridCell.Tab.1.bottom" timestamp="1605893151037">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="219" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1605863452445" />
-    <state width="1253" height="219" key="GridCell.Tab.1.center" timestamp="1605863452444">
+    <state width="1253" height="219" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1605893151037" />
+    <state width="1253" height="219" key="GridCell.Tab.1.center" timestamp="1605893151037">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="219" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1605863452444" />
-    <state width="1253" height="219" key="GridCell.Tab.1.left" timestamp="1605863452444">
+    <state width="1253" height="219" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1605893151037" />
+    <state width="1253" height="219" key="GridCell.Tab.1.left" timestamp="1605893151037">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="219" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1605863452444" />
-    <state width="1253" height="219" key="GridCell.Tab.1.right" timestamp="1605863452444">
+    <state width="1253" height="219" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1605893151037" />
+    <state width="1253" height="219" key="GridCell.Tab.1.right" timestamp="1605893151037">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="219" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1605863452444" />
+    <state width="1253" height="219" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1605893151037" />
     <state width="873" height="174" key="GridCell.Tab.2.bottom" timestamp="1604315978328">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -483,10 +455,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="199" y="27" width="1024" height="741" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1604315974531" />
-    <state x="482" y="99" width="499" height="594" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1605891144544">
+    <state x="482" y="99" width="499" height="594" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1605941721081">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="482" y="99" width="499" height="594" key="com.intellij.testIntegration.createTest.CreateTestDialog/67.27.1299.741@67.27.1299.741" timestamp="1605891144544" />
+    <state x="482" y="99" width="499" height="594" key="com.intellij.testIntegration.createTest.CreateTestDialog/67.27.1299.741@67.27.1299.741" timestamp="1605941721081" />
     <state x="67" y="27" width="1289" height="741" key="new project wizard" timestamp="1605436606110">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

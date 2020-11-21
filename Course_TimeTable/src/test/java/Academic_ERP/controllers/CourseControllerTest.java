@@ -30,7 +30,8 @@ class CourseControllerTest {
         Course test = new Course("CS101", "Algorithms", "Muralidhara V N");
         List<Course> c1 = new ArrayList<>();
         c1.add(test);
+        assertEquals(c1.size(),cm.size());
         //System.out.println(cm.equals(c1));
-        assertEquals(c1.size(), cm.size());
+        //assertArrayEquals(c1.toArray(),cm.toArray());
     }
 }
