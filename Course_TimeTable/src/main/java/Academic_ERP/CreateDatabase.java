@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class CreateDatabase {
+public class    CreateDatabase {
 
     public static void main(String args[]){
 
@@ -37,6 +37,8 @@ public class CreateDatabase {
 
         int noCoursesPerSem = 7;
 
+       /* int noCoursesPerSem = 7;
+
         for(int i=0;i<noCoursesPerSem;i++){
             Course MtcsCourse = new Course(MtcsCid[i],MtcsCnames[i],MtcsFnames[i]);
             Course MtecCourse = new Course(MtecCid[i],MtecCnames[i],MtecFnames[i]);
@@ -49,7 +51,12 @@ public class CreateDatabase {
             MTechCSE.addCourseToDomain(MtcsCourse);
             MTechECE.addCourseToDomain(MtecCourse);
             IMTechCSE.addCourseToDomain(IMtcsCourse);
-        }
+        } */
+
+
+        MtcsCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,MTechCSE);
+        MtecCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,MTechECE);
+        IMtcsCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,IMTechCSE);
 
         List<Student> MtcsStudents = new ArrayList<>();
         List<Student> MtecStudents = new ArrayList<>();
@@ -63,7 +70,11 @@ public class CreateDatabase {
         int seed  = 10;
         Random random  = new Random(seed);
 
-        for(int i=0;i< MtcsSnames.length;i++){
+        MtcsStudents = EnrollStudents(MtcsSnames,MtcsCourses,random,"MT2019CS",noCoursesPerSem);
+        MtecStudents = EnrollStudents(MtecSnames,MtecCourses,random,"MT2019EC",noCoursesPerSem);
+        IMtcsStudents = EnrollStudents(IMtcsSnames,IMtcsCourses,random,"IMT2019CS",noCoursesPerSem);
+
+/*        for(int i=0;i< MtcsSnames.length;i++){
             Student student = new Student("MT2019CS"+(i+1),MtcsSnames[i]);
             int taken = 0;
             for(int courseNo=0;courseNo<noCoursesPerSem;courseNo++) {
@@ -102,6 +113,8 @@ public class CreateDatabase {
             }
             IMtcsStudents.add(student);
         }
+        */
+
 
         /* Assign Slots */
 
@@ -194,4 +207,38 @@ public class CreateDatabase {
         session.getTransaction().commit();
         session.close();
     }
+
+    public static  List<Course> RegisterCourses(String courseIds[],String courseNames[],String facultyNames[],Domain domain){
+        int noCoursesPerSem = 7;
+        List<Course> courses = new ArrayList<>();
+        for(int i=0;i<noCoursesPerSem;i++){
+            Course course = new Course(courseIds[i],courseNames[i],facultyNames[i]);
+
+            courses.add(courses.size(),course);
+
+            domain.addCourseToDomain(course);
+        }
+
+        return courses;
+    }
+
+    public static List<Student> EnrollStudents(String []studentNames,List<Course> courses,Random random,String prefix,int noCoursesPerSem){
+        List<Student> students = new ArrayList<>();
+        for(int i=0;i< studentNames.length;i++){
+            Student student = new Student(prefix+(i+1),studentNames[i]);
+            int taken = 0;
+            for(int courseNo=0;courseNo<noCoursesPerSem;courseNo++) {
+                if((random.nextInt(2)==1) && taken<4){
+                    student.enrollCourse(courses.get(courseNo));
+                    courses.get(courseNo).enrollStudent(student);
+                    taken += 1;
+                }
+            }
+            students.add(student);
+        }
+        return students;
+    }
+
+
+
 }
