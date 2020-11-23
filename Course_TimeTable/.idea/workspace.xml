@@ -30,12 +30,15 @@
     <list default="true" id="9ea6e39e-01c9-4503-89d9-d7fd8e591bda" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/App.java" beforeDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Academic_ERP/services/CourseServicesImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Academic_ERP/services/CourseServicesImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Academic_ERP/App.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Academic_ERP/CreateDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Academic_ERP/CreateDatabase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Academic_ERP/services/CourseServicesImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Academic_ERP/services/CourseServicesImplTest.class" afterDir="false" />
+=======
+>>>>>>> 29c99c839230f7ba66f290a3c7b740c5c6e03912
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +112,23 @@
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.CourseControllerTest">
+=======
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.CreateDatabaseTest.isEnrollingValid">
+>>>>>>> 29c99c839230f7ba66f290a3c7b740c5c6e03912
     <configuration name="App" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Academic_ERP.App" />
       <module name="Course_TimeTable" />
@@ -124,6 +143,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -138,47 +158,62 @@
       </method>
     </configuration>
     <configuration name="CourseControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="CreateDatabaseTest.EnrollStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> 29c99c839230f7ba66f290a3c7b740c5c6e03912
       <module name="Course_TimeTable" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Academic_ERP.controllers.*" />
+          <option name="PATTERN" value="Academic_ERP.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Academic_ERP.controllers" />
-      <option name="MAIN_CLASS_NAME" value="Academic_ERP.controllers.CourseControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CourseControllerTest.getCoursesInSlot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Course_TimeTable" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Academic_ERP.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Academic_ERP.controllers" />
-      <option name="MAIN_CLASS_NAME" value="Academic_ERP.controllers.CourseControllerTest" />
-      <option name="METHOD_NAME" value="getCoursesInSlot" />
+      <option name="PACKAGE_NAME" value="Academic_ERP" />
+      <option name="MAIN_CLASS_NAME" value="Academic_ERP.CreateDatabaseTest" />
+      <option name="METHOD_NAME" value="EnrollStudents" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseServicesImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateDatabaseTest.enrollStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Course_TimeTable" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Academic_ERP.services.*" />
+          <option name="PATTERN" value="Academic_ERP.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="Academic_ERP" />
+      <option name="MAIN_CLASS_NAME" value="Academic_ERP.CreateDatabaseTest" />
+      <option name="METHOD_NAME" value="enrollStudents" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+<<<<<<< HEAD
+    <configuration name="CourseServicesImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+    <configuration name="CreateDatabaseTest.isEnrollingValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> 29c99c839230f7ba66f290a3c7b740c5c6e03912
+      <module name="Course_TimeTable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Academic_ERP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+<<<<<<< HEAD
       <option name="PACKAGE_NAME" value="Academic_ERP.services" />
       <option name="MAIN_CLASS_NAME" value="Academic_ERP.services.CourseServicesImplTest" />
       <option name="TEST_OBJECT" value="class" />
+=======
+      <option name="PACKAGE_NAME" value="Academic_ERP" />
+      <option name="MAIN_CLASS_NAME" value="Academic_ERP.CreateDatabaseTest" />
+      <option name="METHOD_NAME" value="isEnrollingValid" />
+      <option name="TEST_OBJECT" value="method" />
+>>>>>>> 29c99c839230f7ba66f290a3c7b740c5c6e03912
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -199,6 +234,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="CourseServicesImplTest.findStudentsEnrolled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Course_TimeTable" />
       <extension name="coverage">
@@ -210,6 +246,19 @@
       <option name="PACKAGE_NAME" value="Academic_ERP.services" />
       <option name="MAIN_CLASS_NAME" value="Academic_ERP.services.CourseServicesImplTest" />
       <option name="METHOD_NAME" value="findStudentsEnrolled" />
+=======
+    <configuration name="CreateDatabaseTest.registerCourses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Course_TimeTable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Academic_ERP.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Academic_ERP" />
+      <option name="MAIN_CLASS_NAME" value="Academic_ERP.CreateDatabaseTest" />
+      <option name="METHOD_NAME" value="registerCourses" />
+>>>>>>> 29c99c839230f7ba66f290a3c7b740c5c6e03912
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -291,20 +340,36 @@
     <list>
       <item itemvalue="Application.Create Database" />
       <item itemvalue="Application.App" />
+<<<<<<< HEAD
       <item itemvalue="JUnit.CourseServicesImplTest" />
       <item itemvalue="JUnit.CourseServicesImplTest.findCourseBySlot" />
       <item itemvalue="JUnit.CourseServicesImplTest.findStudentsEnrolled" />
       <item itemvalue="JUnit.CourseControllerTest.getCoursesInSlot" />
       <item itemvalue="JUnit.CourseControllerTest" />
+=======
+      <item itemvalue="JUnit.CreateDatabaseTest.main" />
+      <item itemvalue="JUnit.CreateDatabaseTest.registerCourses" />
+      <item itemvalue="JUnit.CreateDatabaseTest.enrollStudents" />
+      <item itemvalue="JUnit.CreateDatabaseTest.EnrollStudents" />
+      <item itemvalue="JUnit.CreateDatabaseTest.isEnrollingValid" />
+>>>>>>> 29c99c839230f7ba66f290a3c7b740c5c6e03912
       <item itemvalue="Tomcat Server.Tomcat 9.0.27" />
     </list>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="JUnit.CourseControllerTest" />
         <item itemvalue="JUnit.CourseControllerTest.getCoursesInSlot" />
         <item itemvalue="JUnit.CourseServicesImplTest" />
         <item itemvalue="JUnit.CourseServicesImplTest.findStudentsEnrolled" />
         <item itemvalue="JUnit.CourseServicesImplTest.findCourseBySlot" />
+=======
+        <item itemvalue="JUnit.CreateDatabaseTest.isEnrollingValid" />
+        <item itemvalue="JUnit.CreateDatabaseTest.EnrollStudents" />
+        <item itemvalue="JUnit.CreateDatabaseTest.enrollStudents" />
+        <item itemvalue="JUnit.CreateDatabaseTest.registerCourses" />
+        <item itemvalue="JUnit.CreateDatabaseTest.main" />
+>>>>>>> 29c99c839230f7ba66f290a3c7b740c5c6e03912
       </list>
     </recent_temporary>
   </component>
@@ -346,9 +411,15 @@
       <workItem from="1605847613530" duration="19895000" />
       <workItem from="1605938890326" duration="3597000" />
       <workItem from="1605951203554" duration="4943000" />
+<<<<<<< HEAD
       <workItem from="1606020136493" duration="2601000" />
       <workItem from="1606064842993" duration="5637000" />
       <workItem from="1606109727790" duration="810000" />
+=======
+      <workItem from="1606020136493" duration="5259000" />
+      <workItem from="1606101490047" duration="3537000" />
+      <workItem from="1606108094060" duration="1440000" />
+>>>>>>> 29c99c839230f7ba66f290a3c7b740c5c6e03912
     </task>
     <servers />
   </component>

@@ -54,9 +54,9 @@ public class    CreateDatabase {
         } */
 
 
-        MtcsCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,MTechCSE);
-        MtecCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,MTechECE);
-        IMtcsCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,IMTechCSE);
+        MtcsCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,MTechCSE,noCoursesPerSem);
+        MtecCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,MTechECE,noCoursesPerSem);
+        IMtcsCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,IMTechCSE,noCoursesPerSem);
 
         List<Student> MtcsStudents = new ArrayList<>();
         List<Student> MtecStudents = new ArrayList<>();
@@ -208,8 +208,8 @@ public class    CreateDatabase {
         session.close();
     }
 
-    public static  List<Course> RegisterCourses(String courseIds[],String courseNames[],String facultyNames[],Domain domain){
-        int noCoursesPerSem = 7;
+    public static  List<Course> RegisterCourses(String courseIds[],String courseNames[],String facultyNames[],Domain domain,int noCoursesPerSem){
+
         List<Course> courses = new ArrayList<>();
         for(int i=0;i<noCoursesPerSem;i++){
             Course course = new Course(courseIds[i],courseNames[i],facultyNames[i]);
@@ -224,17 +224,20 @@ public class    CreateDatabase {
 
     public static List<Student> EnrollStudents(String []studentNames,List<Course> courses,Random random,String prefix,int noCoursesPerSem){
         List<Student> students = new ArrayList<>();
-        for(int i=0;i< studentNames.length;i++){
-            Student student = new Student(prefix+(i+1),studentNames[i]);
+        for(int i=0;i< studentNames.length;i++) {
+            Student student = new Student(prefix + (i + 1), studentNames[i]);
             int taken = 0;
-            for(int courseNo=0;courseNo<noCoursesPerSem;courseNo++) {
-                if((random.nextInt(2)==1) && taken<4){
-                    student.enrollCourse(courses.get(courseNo));
-                    courses.get(courseNo).enrollStudent(student);
-                    taken += 1;
+            while (taken < 4) {
+                for (int courseNo = 0; courseNo < noCoursesPerSem; courseNo++) {
+                    if ((random.nextInt(2) == 1) && taken < 4) {
+                        student.enrollCourse(courses.get(courseNo));
+                        courses.get(courseNo).enrollStudent(student);
+                        taken += 1;
+                    }
                 }
             }
-            students.add(student);
+                students.add(student);
+
         }
         return students;
     }
