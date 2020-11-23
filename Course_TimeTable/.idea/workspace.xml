@@ -29,8 +29,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9ea6e39e-01c9-4503-89d9-d7fd8e591bda" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/CreateDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Academic_ERP/CreateDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Academic_ERP/CreateDatabaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Academic_ERP/CreateDatabaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/App.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -289,11 +288,11 @@
       <item itemvalue="Application.Create Database" />
       <item itemvalue="Application.App" />
       <item itemvalue="JUnit.CreateDatabaseTest.main" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.27" />
       <item itemvalue="JUnit.CreateDatabaseTest.registerCourses" />
       <item itemvalue="JUnit.CreateDatabaseTest.enrollStudents" />
       <item itemvalue="JUnit.CreateDatabaseTest.EnrollStudents" />
       <item itemvalue="JUnit.CreateDatabaseTest.isEnrollingValid" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.27" />
     </list>
     <recent_temporary>
       <list>
@@ -344,7 +343,8 @@
       <workItem from="1605938890326" duration="3597000" />
       <workItem from="1605951203554" duration="4943000" />
       <workItem from="1606020136493" duration="5259000" />
-      <workItem from="1606101490047" duration="3351000" />
+      <workItem from="1606101490047" duration="3537000" />
+      <workItem from="1606108094060" duration="1440000" />
     </task>
     <servers />
   </component>
