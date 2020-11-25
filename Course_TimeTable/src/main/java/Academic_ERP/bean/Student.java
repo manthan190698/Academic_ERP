@@ -1,3 +1,7 @@
+/*This module defines class Student which includes attributes id, roll number of student,
+name of the student, This module also creates many-many mapping between students and courses as
+a student can enroll into multiple subjects and vice versa.*/
+
 package Academic_ERP.bean;
 
 

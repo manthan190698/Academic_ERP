@@ -1,3 +1,14 @@
+/*Tests in this module are generated to test module CourseServicesImpl.java
+* 1. Method findStudentsEnrolled() checks whether the method works in the supposed way for the
+* custom inputs. It checks whether array returned by the method are the students enrolled for the
+* needed subject.
+* 2. Method findCourseBySlotInDomain() checks for the output of courses in particular slot for the
+* particular domain.
+* 3. Method findCourseBySlot() checks array returned by the method contain list of all the courses being
+* taught in particular slot.
+* 4. As content of arraylist of type a class cannot be compared directly, custom functions are
+* created to check the arraylists and the output is verified using assert statements.*/
+
 package Academic_ERP.services;
 
 import Academic_ERP.bean.Course;
@@ -29,7 +40,6 @@ class   CourseServicesImplTest {
 
     @Test
     void findCourseBySlotInDomain() {
-
         Course test = new Course("CS101", "Algorithms", "Muralidhara V N");
         List<Course> c1 = new ArrayList<>();
         c1.add(test);
@@ -39,16 +49,16 @@ class   CourseServicesImplTest {
 
     @Test
     void findCourseBySlot() {
-        Course test1 = new Course("EC104", "Control Systems", "Sudarshan Patil Kulkarni");
-        Course test2 = new Course("CS505", "Maths", "Venkateshwara Bhat");
+        Course test1 = new Course("CS101", "Algorithms", "Muralidhara V N");
+        Course test2 = new Course("EC103", "Analog Design", "U B Mahadeva Swamy");
+        Course test3 = new Course("CS501", "Data Structures", "Muralidhara V N");
         List<Course> c1 = new ArrayList<>();
         c1.add(test1);
         c1.add(test2);
-        List<Course> cis = csi.findCourseBySlot(3);
-        //System.out.println(cis);
+        c1.add(test3);
+        List<Course> cis = csi.findCourseBySlot(1);
+        //System.out.println(csi.findCourseBySlot(1));
         assertTrue(arrayCompareCourses(c1,cis));
-
-
     }
 
     boolean arrayCompareCourses(List<Course> cmp1, List<Course> cmp2) {

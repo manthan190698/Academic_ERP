@@ -1,3 +1,7 @@
+/*This module defines class Student_Min which includes attributes name of student and
+* roll number of student. This module is created to be used by modules which will retrieve
+* information like students enrolled for a subject etc.*/
+
 package Academic_ERP.bean;
 
 public class Student_Min {

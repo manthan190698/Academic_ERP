@@ -1,3 +1,7 @@
+/*Tests defined in this module ensures that objects created of the type Course are being assigned
+ * values as expected and returns a valid output for attributes Course id, name of the course and
+ * name of the Professor.*/
+
 package Academic_ERP.bean;
 
 import org.junit.jupiter.api.BeforeAll;
@@ -10,15 +14,16 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CourseTest {
+
+    Course c = new Course("1","Algebra","Tom");
     @Test
     void getCid() {
-        Course c = new Course("1","Algebra","Tom");
         assertEquals(c.getCid(),"1");
+
     }
 
     @Test
     void getName() {
-        Course c = new Course("1","Algebra","Tom");
         assertEquals(c.getName(),"Algebra");
     }
 
@@ -30,6 +35,7 @@ class CourseTest {
         st.add(s1);
         c.enrollStudent(s1);
         assertEquals(st,c.getStudentsEnrolled());
+
     }
 
     @Test
@@ -37,4 +43,5 @@ class CourseTest {
         Course c = new Course("1","Algebra","Tom");
         assertEquals(c.getFacultyName(),"Tom");
     }
+
 }
