@@ -1,0 +1,3366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>CreateDatabase.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package Academic_ERP;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import Academic_ERP.bean.Course;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import Academic_ERP.bean.Domain;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import Academic_ERP.bean.Slot;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import Academic_ERP.bean.Student;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import Academic_ERP.util.SessionUtil;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import org.hibernate.Session;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.ArrayList;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.List;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Random;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>public class CreateDatabase {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static void main(String args[]){</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>        utility();</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static int utility(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        Domain MTechCSE = new Domain(&#34;MTech CSE&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        Domain MTechECE = new Domain(&#34;MTech ECE&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        Domain IMTechCSE = new Domain(&#34;IMTech CSE&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        List&#60;Course&#62; MtcsCourses = new ArrayList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        List&#60;Course&#62; IMtcsCourses = new ArrayList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        List&#60;Course&#62; MtecCourses = new ArrayList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String []MtcsCid = {&#34;CS101&#34;,&#34;CS102&#34;,&#34;CS103&#34;,&#34;CS104&#34;,&#34;CS105&#34;,&#34;CS106&#34;,&#34;CS107&#34;};</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String []IMtcsCid = {&#34;CS501&#34;,&#34;CS502&#34;,&#34;CS503&#34;,&#34;CS504&#34;,&#34;CS505&#34;,&#34;CS506&#34;,&#34;CS507&#34;};</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String []MtecCid = {&#34;EC101&#34;,&#34;EC102&#34;,&#34;EC103&#34;,&#34;EC104&#34;,&#34;EC105&#34;,&#34;EC106&#34;,&#34;EC507&#34;};</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String []MtcsCnames = {&#34;Algorithms&#34;,&#34;Machine Learning&#34;,&#34;Networks&#34;,&#34;MML&#34;,&#34;Discreet Mathematics&#34;,&#34;System Software&#34;,&#34;DevOps&#34;};</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String []IMtcsCnames = {&#34;Data Structures&#34;,&#34;Operating Systems&#34;,&#34;Computer Organization&#34;,&#34;Computer Networks&#34;,&#34;Maths&#34;,&#34;Compiler Design&#34;,&#34;C++&#34;};</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String []MtecCnames = {&#34;VLSI&#34;,&#34;Networks&#34;,&#34;Analog Design&#34;,&#34;Control Systems&#34;,&#34;Digital Communication&#34;,&#34;Antenna Theory&#34;,&#34;Field theory&#34;};</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String []MtcsFnames = {&#34;Muralidhara V N&#34;,&#34;Neelam Sinha&#34;,&#34;Yashwanth&#34;,&#34;Ramasubhramaniam&#34;,&#34;Rajesh&#34;,&#34;R Chandrashekar&#34;,&#34;Thangraju&#34;};</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String []IMtcsFnames = {&#34;Muralidhara V N&#34;,&#34;Vikram Pai&#34;,&#34;Akshatha Shetty&#34;,&#34;Naveen Rai&#34;,&#34;Venkateshwara Bhat&#34;,&#34;Sidhaarth Mallya&#34;,&#34;Random guy&#34;};</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String []MtecFnames = {&#34;Varun Rao&#34;,&#34;Gopalakrishna Adiga&#34;,&#34;U B Mahadeva Swamy&#34;,&#34;Sudarshan Patil Kulkarni&#34;,&#34;Tom Cruise&#34;,&#34;Ramya Bhat&#34;,&#34;Rakesh&#34;};</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        //int noCoursesPerSem = 7;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        MtcsCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,MTechCSE,7);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        MtecCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,MTechECE,7);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_45'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        IMtcsCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,IMTechCSE,7);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        List&#60;Student&#62; MtcsStudents = new ArrayList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        List&#60;Student&#62; MtecStudents = new ArrayList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        List&#60;Student&#62; IMtcsStudents = new ArrayList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String[] MtcsSnames = {&#34;Manthan Fursule&#34;,&#34;Vipin Rai P&#34;,&#34;Harshabh Mahanth&#34;,&#34;Sameer Khurd&#34;,&#34;Rohit Sharma&#34;,&#34;Saurabh Singh&#34;,&#34;Ayush Mishra&#34;,&#34;Ravi&#34;,&#34;Vamsi Krishna&#34;,&#34;Tushar&#34;};</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String[] MtecSnames = {&#34;Ponnana&#34;,&#34;Jayram Mendon&#34;,&#34;Aishwarya Shetty&#34;,&#34;Rakshith Gowda&#34;,&#34;Brijesh Rai&#34;,&#34;Ramkumar&#34;};</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String[] IMtcsSnames = {&#34;Rajath Singh&#34;,&#34;Rohith Shetty&#34;,&#34;Kanika Nayak&#34;,&#34;Supriya Acharya&#34;,&#34;Vivek Bhat&#34;,&#34;Raghavendra&#34;,&#34;Prashanth&#34;,&#34;Prathibha&#34;};</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_54'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_55'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        /* Enrolling Students */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        MtcsStudents = EnrollStudents(MtcsSnames,MtcsCourses,&#34;MT2019CS&#34;,7);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        MtecStudents = EnrollStudents(MtecSnames,MtecCourses,&#34;MT2019EC&#34;,7);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        IMtcsStudents = EnrollStudents(IMtcsSnames,IMtcsCourses,&#34;IMT2019CS&#34;,7);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_61'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_62'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        /* Assign Slots */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_63'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_64'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        List&#60;Slot&#62; slots = new ArrayList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_65'/>
+65
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_65'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_66'/>
+66
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_66'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_67'/>
+67
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_67'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots = createSlots(20);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_68'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_69'/>
+69
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_69'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        /* MTech cs time table */</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_70'/>
+70
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_70'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(0).addCourseToSlot(MtcsCourses.get(0));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_71'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(1).addCourseToSlot(MtcsCourses.get(6));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_72'/>
+72
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_72'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(4).addCourseToSlot(MtcsCourses.get(3));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_73'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(4).addCourseToSlot(MtcsCourses.get(2)); //changed</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_74'/>
+74
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_74'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(6).addCourseToSlot(MtcsCourses.get(4));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_75'/>
+75
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_75'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(8).addCourseToSlot(MtcsCourses.get(5));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_76'/>
+76
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_76'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(10).addCourseToSlot(MtcsCourses.get(0));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_77'/>
+77
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_77'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(12).addCourseToSlot(MtcsCourses.get(2));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_78'/>
+78
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_78'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(13).addCourseToSlot(MtcsCourses.get(1));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_79'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(15).addCourseToSlot(MtcsCourses.get(3));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_80'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(16).addCourseToSlot(MtcsCourses.get(1));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_81'/>
+81
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_81'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(18).addCourseToSlot(MtcsCourses.get(5));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_82'/>
+82
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_82'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_83'/>
+83
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_83'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        /* MTech ec time table */</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_84'/>
+84
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_84'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(0).addCourseToSlot(MtecCourses.get(2));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_85'/>
+85
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_85'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(2).addCourseToSlot(MtecCourses.get(3));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_86'/>
+86
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_86'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(3).addCourseToSlot(MtecCourses.get(0));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_87'/>
+87
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_87'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(5).addCourseToSlot(MtecCourses.get(1));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_88'/>
+88
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_88'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(7).addCourseToSlot(MtecCourses.get(5));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_89'/>
+89
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_89'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(8).addCourseToSlot(MtecCourses.get(4));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_90'/>
+90
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_90'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(11).addCourseToSlot(MtecCourses.get(2));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_91'/>
+91
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_91'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(12).addCourseToSlot(MtecCourses.get(0));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_92'/>
+92
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_92'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(14).addCourseToSlot(MtecCourses.get(3));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_93'/>
+93
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_93'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(15).addCourseToSlot(MtecCourses.get(5));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_94'/>
+94
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_94'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(16).addCourseToSlot(MtecCourses.get(4));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_95'/>
+95
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_95'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(18).addCourseToSlot(MtecCourses.get(1));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_96'/>
+96
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_96'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_97'/>
+97
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_97'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        /* IMTech cs time table */</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_98'/>
+98
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_98'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(0).addCourseToSlot(IMtcsCourses.get(0));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_99'/>
+99
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_99'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(2).addCourseToSlot(IMtcsCourses.get(4));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_100'/>
+100
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_100'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(3).addCourseToSlot(IMtcsCourses.get(1));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_101'/>
+101
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_101'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(4).addCourseToSlot(IMtcsCourses.get(5));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_102'/>
+102
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_102'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(5).addCourseToSlot(IMtcsCourses.get(2));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_103'/>
+103
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_103'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(7).addCourseToSlot(IMtcsCourses.get(3));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_104'/>
+104
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_104'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(8).addCourseToSlot(IMtcsCourses.get(1));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_105'/>
+105
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_105'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(9).addCourseToSlot(IMtcsCourses.get(2));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_106'/>
+106
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_106'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(10).addCourseToSlot(IMtcsCourses.get(0));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_107'/>
+107
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_107'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(12).addCourseToSlot(IMtcsCourses.get(4));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_108'/>
+108
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_108'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(14).addCourseToSlot(IMtcsCourses.get(5));</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_109'/>
+109
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_109'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        slots.get(17).addCourseToSlot(IMtcsCourses.get(3));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_110'/>
+110
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_110'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_111'/>
+111
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_111'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_112'/>
+112
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_112'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        Session session = SessionUtil.getSession();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_113'/>
+113
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_113'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        session.beginTransaction();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_114'/>
+114
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_114'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_115'/>
+115
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_115'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_116'/>
+116
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_116'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for(Student student:MtcsStudents){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_117'/>
+117
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_117'>13</a>
+<span>
+1. createSlots : greater or equal to greater than &rarr; SURVIVED<br/>
+2. createSlots : greater or equal to equal &rarr; SURVIVED<br/>
+3. createSlots : Incremented (a++) integer local variable number 0 &rarr; TIMED_OUT<br/>
+4. createSlots : Incremented (++a) integer local variable number 0 &rarr; TIMED_OUT<br/>
+5. createSlots : greater or equal to less than &rarr; KILLED<br/>
+6. createSlots : greater or equal to less or equal &rarr; KILLED<br/>
+7. createSlots : greater or equal to not equal &rarr; KILLED<br/>
+8. createSlots : Incremented (a++) integer local variable number 3 &rarr; KILLED<br/>
+9. createSlots : Decremented (a--) integer local variable number 3 &rarr; KILLED<br/>
+10. createSlots : Decremented (a--) integer local variable number 0 &rarr; KILLED<br/>
+11. createSlots : Incremented (++a) integer local variable number 3 &rarr; KILLED<br/>
+12. createSlots : Decremented (--a) integer local variable number 3 &rarr; KILLED<br/>
+13. createSlots : Decremented (--a) integer local variable number 0 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            session.save(student);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_118'/>
+118
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_118'>8</a>
+<span>
+1. createSlots : Replaced integer addition with subtraction &rarr; KILLED<br/>
+2. createSlots : Replaced integer addition with multiplication &rarr; KILLED<br/>
+3. createSlots : Replaced integer addition with division &rarr; KILLED<br/>
+4. createSlots : Replaced integer addition with modulus &rarr; KILLED<br/>
+5. createSlots : Incremented (a++) integer local variable number 3 &rarr; KILLED<br/>
+6. createSlots : Decremented (a--) integer local variable number 3 &rarr; KILLED<br/>
+7. createSlots : Incremented (++a) integer local variable number 3 &rarr; KILLED<br/>
+8. createSlots : Decremented (--a) integer local variable number 3 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_119'/>
+119
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_119'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_120'/>
+120
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_120'>13</a>
+<span>
+1. createSlots : not equal to less than &rarr; SURVIVED<br/>
+2. createSlots : not equal to less or equal &rarr; SURVIVED<br/>
+3. createSlots : Incremented (a++) integer local variable number 2 &rarr; SURVIVED<br/>
+4. createSlots : Decremented (a--) integer local variable number 2 &rarr; SURVIVED<br/>
+5. createSlots : Decremented (--a) integer local variable number 2 &rarr; SURVIVED<br/>
+6. createSlots : Incremented (a++) integer local variable number 0 &rarr; TIMED_OUT<br/>
+7. createSlots : Incremented (++a) integer local variable number 0 &rarr; TIMED_OUT<br/>
+8. createSlots : not equal to greater than &rarr; KILLED<br/>
+9. createSlots : not equal to greater or equal &rarr; KILLED<br/>
+10. createSlots : not equal to equal &rarr; KILLED<br/>
+11. createSlots : Decremented (a--) integer local variable number 0 &rarr; KILLED<br/>
+12. createSlots : Incremented (++a) integer local variable number 2 &rarr; KILLED<br/>
+13. createSlots : Decremented (--a) integer local variable number 0 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        for(Student student:MtecStudents){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_121'/>
+121
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_121'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            session.save(student);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_122'/>
+122
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_122'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_123'/>
+123
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_123'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_124'/>
+124
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_124'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        for(Student student:IMtcsStudents){</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_125'/>
+125
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_125'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            session.save(student);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_126'/>
+126
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_126'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_127'/>
+127
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_127'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_128'/>
+128
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_128'>13</a>
+<span>
+1. RegisterCourses : greater or equal to equal &rarr; SURVIVED<br/>
+2. RegisterCourses : greater or equal to less than &rarr; KILLED<br/>
+3. RegisterCourses : greater or equal to less or equal &rarr; KILLED<br/>
+4. RegisterCourses : greater or equal to greater than &rarr; KILLED<br/>
+5. RegisterCourses : greater or equal to not equal &rarr; KILLED<br/>
+6. RegisterCourses : Incremented (a++) integer local variable number 6 &rarr; KILLED<br/>
+7. RegisterCourses : Incremented (a++) integer local variable number 4 &rarr; KILLED<br/>
+8. RegisterCourses : Decremented (a--) integer local variable number 6 &rarr; KILLED<br/>
+9. RegisterCourses : Decremented (a--) integer local variable number 4 &rarr; KILLED<br/>
+10. RegisterCourses : Incremented (++a) integer local variable number 6 &rarr; KILLED<br/>
+11. RegisterCourses : Incremented (++a) integer local variable number 4 &rarr; KILLED<br/>
+12. RegisterCourses : Decremented (--a) integer local variable number 6 &rarr; KILLED<br/>
+13. RegisterCourses : Decremented (--a) integer local variable number 4 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        for(Course course:MtcsCourses){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_129'/>
+129
+</td>
+<td class='uncertain'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_129'>12</a>
+<span>
+1. RegisterCourses : Decremented (a--) integer local variable number 6 &rarr; TIMED_OUT<br/>
+2. RegisterCourses : Incremented (a++) integer local variable number 6 &rarr; KILLED<br/>
+3. RegisterCourses : Incremented (a++) integer local variable number 6 &rarr; KILLED<br/>
+4. RegisterCourses : Incremented (a++) integer local variable number 6 &rarr; KILLED<br/>
+5. RegisterCourses : Decremented (a--) integer local variable number 6 &rarr; KILLED<br/>
+6. RegisterCourses : Decremented (a--) integer local variable number 6 &rarr; KILLED<br/>
+7. RegisterCourses : Incremented (++a) integer local variable number 6 &rarr; KILLED<br/>
+8. RegisterCourses : Incremented (++a) integer local variable number 6 &rarr; KILLED<br/>
+9. RegisterCourses : Incremented (++a) integer local variable number 6 &rarr; KILLED<br/>
+10. RegisterCourses : Decremented (--a) integer local variable number 6 &rarr; KILLED<br/>
+11. RegisterCourses : Decremented (--a) integer local variable number 6 &rarr; KILLED<br/>
+12. RegisterCourses : Decremented (--a) integer local variable number 6 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='uncertain'>            session.save(course);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_130'/>
+130
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_130'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_131'/>
+131
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_131'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_132'/>
+132
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_132'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        for(Course course:MtecCourses){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_133'/>
+133
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_133'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            session.save(course);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_134'/>
+134
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_134'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_135'/>
+135
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_135'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_136'/>
+136
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_136'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for(Course course:IMtcsCourses){</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_137'/>
+137
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_137'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            session.save(course);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_138'/>
+138
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_138'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_139'/>
+139
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_139'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_140'/>
+140
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_140'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        session.save(MTechCSE);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_141'/>
+141
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_141'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        session.save(MTechECE);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_142'/>
+142
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_142'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        session.save(IMTechCSE);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_143'/>
+143
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_143'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_144'/>
+144
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_144'>9</a>
+<span>
+1. EnrollStudents : greater or equal to equal &rarr; SURVIVED<br/>
+2. EnrollStudents : greater or equal to less than &rarr; KILLED<br/>
+3. EnrollStudents : greater or equal to less or equal &rarr; KILLED<br/>
+4. EnrollStudents : greater or equal to greater than &rarr; KILLED<br/>
+5. EnrollStudents : greater or equal to not equal &rarr; KILLED<br/>
+6. EnrollStudents : Incremented (a++) integer local variable number 6 &rarr; KILLED<br/>
+7. EnrollStudents : Decremented (a--) integer local variable number 6 &rarr; KILLED<br/>
+8. EnrollStudents : Incremented (++a) integer local variable number 6 &rarr; KILLED<br/>
+9. EnrollStudents : Decremented (--a) integer local variable number 6 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        for (Slot slot:slots){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_145'/>
+145
+</td>
+<td class='uncertain'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_145'>12</a>
+<span>
+1. EnrollStudents : Decremented (a--) integer local variable number 6 &rarr; TIMED_OUT<br/>
+2. EnrollStudents : Replaced integer addition with subtraction &rarr; KILLED<br/>
+3. EnrollStudents : Replaced integer addition with multiplication &rarr; KILLED<br/>
+4. EnrollStudents : Replaced integer addition with division &rarr; KILLED<br/>
+5. EnrollStudents : Replaced integer addition with modulus &rarr; KILLED<br/>
+6. EnrollStudents : Incremented (a++) integer local variable number 6 &rarr; KILLED<br/>
+7. EnrollStudents : Incremented (a++) integer local variable number 6 &rarr; KILLED<br/>
+8. EnrollStudents : Decremented (a--) integer local variable number 6 &rarr; KILLED<br/>
+9. EnrollStudents : Incremented (++a) integer local variable number 6 &rarr; KILLED<br/>
+10. EnrollStudents : Incremented (++a) integer local variable number 6 &rarr; KILLED<br/>
+11. EnrollStudents : Decremented (--a) integer local variable number 6 &rarr; KILLED<br/>
+12. EnrollStudents : Decremented (--a) integer local variable number 6 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='uncertain'>            session.save(slot);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_146'/>
+146
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_146'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_147'/>
+147
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_147'>9</a>
+<span>
+1. EnrollStudents : greater or equal to equal &rarr; SURVIVED<br/>
+2. EnrollStudents : greater or equal to greater than &rarr; TIMED_OUT<br/>
+3. EnrollStudents : Decremented (--a) integer local variable number 8 &rarr; TIMED_OUT<br/>
+4. EnrollStudents : greater or equal to less than &rarr; KILLED<br/>
+5. EnrollStudents : greater or equal to less or equal &rarr; KILLED<br/>
+6. EnrollStudents : greater or equal to not equal &rarr; KILLED<br/>
+7. EnrollStudents : Incremented (a++) integer local variable number 8 &rarr; KILLED<br/>
+8. EnrollStudents : Decremented (a--) integer local variable number 8 &rarr; KILLED<br/>
+9. EnrollStudents : Incremented (++a) integer local variable number 8 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_148'/>
+148
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_148'>13</a>
+<span>
+1. EnrollStudents : greater or equal to equal &rarr; SURVIVED<br/>
+2. EnrollStudents : Incremented (++a) integer local variable number 9 &rarr; SURVIVED<br/>
+3. EnrollStudents : greater or equal to less than &rarr; TIMED_OUT<br/>
+4. EnrollStudents : greater or equal to less or equal &rarr; TIMED_OUT<br/>
+5. EnrollStudents : greater or equal to not equal &rarr; TIMED_OUT<br/>
+6. EnrollStudents : greater or equal to greater than &rarr; KILLED<br/>
+7. EnrollStudents : Incremented (a++) integer local variable number 9 &rarr; KILLED<br/>
+8. EnrollStudents : Incremented (a++) integer local variable number 3 &rarr; KILLED<br/>
+9. EnrollStudents : Decremented (a--) integer local variable number 9 &rarr; KILLED<br/>
+10. EnrollStudents : Decremented (a--) integer local variable number 3 &rarr; KILLED<br/>
+11. EnrollStudents : Incremented (++a) integer local variable number 3 &rarr; KILLED<br/>
+12. EnrollStudents : Decremented (--a) integer local variable number 9 &rarr; KILLED<br/>
+13. EnrollStudents : Decremented (--a) integer local variable number 3 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        session.getTransaction().commit();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_149'/>
+149
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_149'>14</a>
+<span>
+1. EnrollStudents : not equal to less than &rarr; SURVIVED<br/>
+2. EnrollStudents : not equal to greater than &rarr; SURVIVED<br/>
+3. EnrollStudents : greater or equal to greater than &rarr; SURVIVED<br/>
+4. EnrollStudents : not equal to greater or equal &rarr; SURVIVED<br/>
+5. EnrollStudents : greater or equal to equal &rarr; SURVIVED<br/>
+6. EnrollStudents : not equal to equal &rarr; SURVIVED<br/>
+7. EnrollStudents : greater or equal to less than &rarr; TIMED_OUT<br/>
+8. EnrollStudents : not equal to less or equal &rarr; TIMED_OUT<br/>
+9. EnrollStudents : greater or equal to less or equal &rarr; TIMED_OUT<br/>
+10. EnrollStudents : greater or equal to not equal &rarr; TIMED_OUT<br/>
+11. EnrollStudents : Decremented (a--) integer local variable number 8 &rarr; TIMED_OUT<br/>
+12. EnrollStudents : Decremented (--a) integer local variable number 8 &rarr; TIMED_OUT<br/>
+13. EnrollStudents : Incremented (a++) integer local variable number 8 &rarr; KILLED<br/>
+14. EnrollStudents : Incremented (++a) integer local variable number 8 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        session.close();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_150'/>
+150
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_150'>4</a>
+<span>
+1. EnrollStudents : Incremented (a++) integer local variable number 9 &rarr; KILLED<br/>
+2. EnrollStudents : Decremented (a--) integer local variable number 9 &rarr; KILLED<br/>
+3. EnrollStudents : Incremented (++a) integer local variable number 9 &rarr; KILLED<br/>
+4. EnrollStudents : Decremented (--a) integer local variable number 9 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_151'/>
+151
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_151'>4</a>
+<span>
+1. EnrollStudents : Incremented (a++) integer local variable number 9 &rarr; SURVIVED<br/>
+2. EnrollStudents : Decremented (a--) integer local variable number 9 &rarr; SURVIVED<br/>
+3. EnrollStudents : Incremented (++a) integer local variable number 9 &rarr; KILLED<br/>
+4. EnrollStudents : Decremented (--a) integer local variable number 9 &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_152'/>
+152
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_152'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_153'/>
+153
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_153'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        return 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_154'/>
+154
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_154'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_155'/>
+155
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_155'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_156'/>
+156
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_156'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public static List&#60;Slot&#62; createSlots(int noSlots){</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_157'/>
+157
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_157'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        List&#60;Slot&#62; slots = new ArrayList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_158'/>
+158
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_158'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        int count = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_159'/>
+159
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_159'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for(int i=0;i&#60;noSlots;i++){</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_160'/>
+160
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_160'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            slots.add(new Slot(i+1));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_161'/>
+161
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_161'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            count++;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_162'/>
+162
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_162'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            if(count==noSlots)</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_163'/>
+163
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_163'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                break;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_164'/>
+164
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_164'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_165'/>
+165
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_165'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        return slots;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_166'/>
+166
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_166'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_167'/>
+167
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_167'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_168'/>
+168
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_168'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static  List&#60;Course&#62; RegisterCourses(String courseIds[],String courseNames[],String facultyNames[],Domain domain,int noCoursesPerSem){</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_169'/>
+169
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_169'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        List&#60;Course&#62; courses = new ArrayList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_170'/>
+170
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_170'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        for(int i=0;i&#60;noCoursesPerSem;i++){</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_171'/>
+171
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_171'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            Course course = new Course(courseIds[i],courseNames[i],facultyNames[i]);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_172'/>
+172
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_172'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_173'/>
+173
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_173'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            courses.add(courses.size(),course);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_174'/>
+174
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_174'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_175'/>
+175
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_175'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            domain.addCourseToDomain(course);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_176'/>
+176
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_176'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_177'/>
+177
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_177'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_178'/>
+178
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_178'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        return courses;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_179'/>
+179
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_179'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_180'/>
+180
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_180'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_181'/>
+181
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_181'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static List&#60;Student&#62; EnrollStudents(String []studentNames,List&#60;Course&#62; courses,String prefix,int noCoursesPerSem){</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_182'/>
+182
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_182'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        //int seed  = 10;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_183'/>
+183
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_183'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        Random random  = new Random(10);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_184'/>
+184
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_184'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_185'/>
+185
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_185'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        List&#60;Student&#62; students = new ArrayList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_186'/>
+186
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_186'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        for(int i=0;i&#60; studentNames.length;i++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_187'/>
+187
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_187'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            Student student = new Student(prefix + (i + 1), studentNames[i]);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_188'/>
+188
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_188'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            int taken = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_189'/>
+189
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_189'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            while (taken &#60; 4) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_190'/>
+190
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_190'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                for (int courseNo = 0; courseNo &#60; noCoursesPerSem; courseNo++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_191'/>
+191
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_191'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                    if ((random.nextInt(2) == 1) &#38;&#38; taken &#60; 4) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_192'/>
+192
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_192'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                        student.enrollCourse(courses.get(courseNo));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_193'/>
+193
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_193'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                        courses.get(courseNo).enrollStudent(student);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_194'/>
+194
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_194'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                        taken += 1;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_195'/>
+195
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_195'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_196'/>
+196
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_196'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_197'/>
+197
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_197'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_198'/>
+198
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_198'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                students.add(student);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_199'/>
+199
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_199'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_200'/>
+200
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_200'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_201'/>
+201
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_201'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        return students;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_202'/>
+202
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_202'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_203'/>
+203
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_203'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@6eabe718_204'/>
+204
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_204'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6eabe718_117'>117</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_117'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> greater or equal to less than &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> greater or equal to less or equal &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>none</span></span> greater or equal to greater than &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>none</span></span> greater or equal to equal &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> greater or equal to not equal &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> Incremented (a++) integer local variable number 3 &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>none</span></span> Incremented (a++) integer local variable number 0 &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> Decremented (a--) integer local variable number 3 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> Decremented (a--) integer local variable number 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> Incremented (++a) integer local variable number 3 &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>none</span></span> Incremented (++a) integer local variable number 0 &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> Decremented (--a) integer local variable number 3 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>13.<span><b>13</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> Decremented (--a) integer local variable number 0 &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6eabe718_118'>118</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_118'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> Replaced integer addition with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> Replaced integer addition with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> Replaced integer addition with modulus &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> Incremented (a++) integer local variable number 3 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> Decremented (a--) integer local variable number 3 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> Incremented (++a) integer local variable number 3 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> Decremented (--a) integer local variable number 3 &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6eabe718_120'>120</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_120'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>none</span></span> not equal to less than &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>none</span></span> not equal to less or equal &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> not equal to greater than &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> not equal to greater or equal &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> not equal to equal &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>none</span></span> Incremented (a++) integer local variable number 2 &rarr; SURVIVED</p> <p class='TIMED_OUT'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>none</span></span> Incremented (a++) integer local variable number 0 &rarr; TIMED_OUT</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>none</span></span> Decremented (a--) integer local variable number 2 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> Decremented (a--) integer local variable number 0 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> Incremented (++a) integer local variable number 2 &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>none</span></span> Incremented (++a) integer local variable number 0 &rarr; TIMED_OUT</p> <p class='SURVIVED'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>none</span></span> Decremented (--a) integer local variable number 2 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>13.<span><b>13</b><br/><b>Location : </b>createSlots<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()]</span></span> Decremented (--a) integer local variable number 0 &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6eabe718_128'>128</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_128'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> greater or equal to less than &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> greater or equal to less or equal &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> greater or equal to greater than &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>none</span></span> greater or equal to equal &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> greater or equal to not equal &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Incremented (a++) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Incremented (a++) integer local variable number 4 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Decremented (a--) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Decremented (a--) integer local variable number 4 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Incremented (++a) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Incremented (++a) integer local variable number 4 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Decremented (--a) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>13.<span><b>13</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Decremented (--a) integer local variable number 4 &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6eabe718_129'>129</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_129'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Incremented (a++) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Incremented (a++) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Incremented (a++) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Decremented (a--) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Decremented (a--) integer local variable number 6 &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>none</span></span> Decremented (a--) integer local variable number 6 &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Incremented (++a) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Incremented (++a) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Incremented (++a) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Decremented (--a) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Decremented (--a) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>RegisterCourses<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()]</span></span> Decremented (--a) integer local variable number 6 &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6eabe718_144'>144</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_144'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> greater or equal to less than &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> greater or equal to less or equal &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> greater or equal to greater than &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> greater or equal to equal &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> greater or equal to not equal &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:EnrollStudents()]</span></span> Incremented (a++) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Decremented (a--) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Incremented (++a) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Decremented (--a) integer local variable number 6 &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6eabe718_145'>145</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_145'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:EnrollStudents()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:EnrollStudents()]</span></span> Replaced integer addition with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:EnrollStudents()]</span></span> Replaced integer addition with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:EnrollStudents()]</span></span> Replaced integer addition with modulus &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Incremented (a++) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Incremented (a++) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Decremented (a--) integer local variable number 6 &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> Decremented (a--) integer local variable number 6 &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Incremented (++a) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Incremented (++a) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Decremented (--a) integer local variable number 6 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Decremented (--a) integer local variable number 6 &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6eabe718_147'>147</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_147'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> greater or equal to less than &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> greater or equal to less or equal &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> greater or equal to greater than &rarr; TIMED_OUT</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> greater or equal to equal &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> greater or equal to not equal &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Incremented (a++) integer local variable number 8 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Decremented (a--) integer local variable number 8 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Incremented (++a) integer local variable number 8 &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> Decremented (--a) integer local variable number 8 &rarr; TIMED_OUT</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6eabe718_148'>148</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_148'/> 
+
+<p class='TIMED_OUT'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> greater or equal to less than &rarr; TIMED_OUT</p> <p class='TIMED_OUT'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> greater or equal to less or equal &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testUtility()]</span></span> greater or equal to greater than &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> greater or equal to equal &rarr; SURVIVED</p> <p class='TIMED_OUT'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> greater or equal to not equal &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testUtility()]</span></span> Incremented (a++) integer local variable number 9 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Incremented (a++) integer local variable number 3 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Decremented (a--) integer local variable number 9 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Decremented (a--) integer local variable number 3 &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> Incremented (++a) integer local variable number 9 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Incremented (++a) integer local variable number 3 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Decremented (--a) integer local variable number 9 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>13.<span><b>13</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Decremented (--a) integer local variable number 3 &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6eabe718_149'>149</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_149'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> not equal to less than &rarr; SURVIVED</p> <p class='TIMED_OUT'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> greater or equal to less than &rarr; TIMED_OUT</p> <p class='TIMED_OUT'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> not equal to less or equal &rarr; TIMED_OUT</p> <p class='TIMED_OUT'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> greater or equal to less or equal &rarr; TIMED_OUT</p> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> not equal to greater than &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> greater or equal to greater than &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> not equal to greater or equal &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> greater or equal to equal &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>9.<span><b>9</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> not equal to equal &rarr; SURVIVED</p> <p class='TIMED_OUT'><span class='pop'>10.<span><b>10</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> greater or equal to not equal &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>11.<span><b>11</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Incremented (a++) integer local variable number 8 &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>12.<span><b>12</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> Decremented (a--) integer local variable number 8 &rarr; TIMED_OUT</p> <p class='KILLED'><span class='pop'>13.<span><b>13</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Incremented (++a) integer local variable number 8 &rarr; KILLED</p> <p class='TIMED_OUT'><span class='pop'>14.<span><b>14</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> Decremented (--a) integer local variable number 8 &rarr; TIMED_OUT</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6eabe718_150'>150</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_150'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testUtility()]</span></span> Incremented (a++) integer local variable number 9 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Decremented (a--) integer local variable number 9 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testUtility()]</span></span> Incremented (++a) integer local variable number 9 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Decremented (--a) integer local variable number 9 &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@6eabe718_151'>151</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@6eabe718_151'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> Incremented (a++) integer local variable number 9 &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>none</span></span> Decremented (a--) integer local variable number 9 &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testUtility()]</span></span> Incremented (++a) integer local variable number 9 &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>EnrollStudents<br/><b>Killed by : </b>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()]</span></span> Decremented (--a) integer local variable number 9 &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>AOR_1_MUTATOR</li>
+<li class='mutator'>AOR_2_MUTATOR</li>
+<li class='mutator'>AOR_3_MUTATOR</li>
+<li class='mutator'>AOR_4_MUTATOR</li>
+<li class='mutator'>ROR_1_MUTATOR</li>
+<li class='mutator'>ROR_2_MUTATOR</li>
+<li class='mutator'>ROR_3_MUTATOR</li>
+<li class='mutator'>ROR_4_MUTATOR</li>
+<li class='mutator'>ROR_5_MUTATOR</li>
+<li class='mutator'>UOI_1_MUTATOR</li>
+<li class='mutator'>UOI_2_MUTATOR</li>
+<li class='mutator'>UOI_3_MUTATOR</li>
+<li class='mutator'>UOI_4_MUTATOR</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testSlotsCreation()] (5 ms)</li><li>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:EnrollStudents()] (9 ms)</li><li>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:registerCourses()] (5 ms)</li><li>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:testUtility()] (5 ms)</li><li>Academic_ERP.CreateDatabaseTest.[engine:junit-jupiter]/[class:Academic_ERP.CreateDatabaseTest]/[method:isEnrollingValid()] (4 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.5.2
+
+</body>
+</html>

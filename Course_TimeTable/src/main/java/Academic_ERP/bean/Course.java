@@ -1,3 +1,7 @@
+/*This module defines class Course which includes attributes id, name of course and
+ * faculty which will be teaching the respective subject. Methods include getter and setter methods
+ * to assign values and retrieve information from object of class Course*/
+
 package Academic_ERP.bean;
 
 

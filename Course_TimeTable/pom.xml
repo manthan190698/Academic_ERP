@@ -33,7 +33,6 @@
                         <artifactId>pitest-junit5-plugin</artifactId>
                         <version>0.12</version>
                     </dependency>
-
                 </dependencies>
             </plugin>
 

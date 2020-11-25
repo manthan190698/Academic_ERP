@@ -1,3 +1,8 @@
+/*This module defines class Course_Min which includes attributes course id, name of course,
+ * faculty which will be teaching the respective subject and slot of the timetable in which
+ * the subject will be taught. Methods include getter and setter methodsto assign values and
+ * retrieve information from object of class Course_Min*/
+
 package Academic_ERP.bean;
 
 public class Course_Min {
@@ -47,5 +52,15 @@ public class Course_Min {
 
     public void setFacultyName(String facultyName) {
         this.facultyName = facultyName;
+    }
+
+    @Override
+    public String toString() {
+        return "Course_Min{" +
+                "cid='" + cid + '\'' +
+                "name='" + name + '\'' +
+                "faculty name='" + facultyName + '\'' +
+                ", slot No=" + slotNo +
+                '}';
     }
 }

@@ -1,3 +1,6 @@
+/*This module contacts with front end and provides information like students enrolled for a course,
+* courses being taught in a slot*/
+
 package Academic_ERP.controllers;
 
 
@@ -41,12 +44,6 @@ public class    CourseController {
             enrolledStudentsRet.add(new Student_Min(enrolledStudents.get(i).getRollNo(),
                     enrolledStudents.get(i).getName()));
         }
-
-        /*for(Student s:enrolledStudents){
-            System.out.println(s);
-            enrolledStudentsRet.add(new Student_Min(s.getRollNo(),s.getName()));
-        }*/
-
         return enrolledStudentsRet;
     }
 
@@ -65,20 +62,12 @@ public class    CourseController {
 
         int len_courses = courses.size();
         for(int i=0;i<len_courses;i++){
-            System.out.println(courses.get(i));
+            //System.out.println(courses.get(i));
             coursesAlloted.add(new Course_Min(courses.get(i).getCid(),
                     courses.get(i).getName(),
                     courses.get(i).getFacultyName(),
                     slotNo));
         }
-        /*
-        for(Course c:courses){
-            System.out.println(c);
-            coursesAlloted.add(new Course_Min(c.getCid(),c.getName(),c.getFacultyName(),slotNo));
-        }
-
-         */
-
         return coursesAlloted;
     }
 

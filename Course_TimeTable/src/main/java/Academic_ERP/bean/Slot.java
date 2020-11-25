@@ -1,3 +1,6 @@
+/*This module defines class Slot which creates many many to mapping between slots and courses
+*  as many courses can be taught in same slot for different domains and vice versa.
+* Class Slot contain slot number, slot id and courses to be allotted to the slots*/
 package Academic_ERP.bean;
 
 import org.hibernate.annotations.NaturalId;

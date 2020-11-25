@@ -1,3 +1,7 @@
+/*This module defines class Domain which creates one to many mapping between domains like
+"MTech CSE/ECE and iMTech" and Subjects to be included into respective domains.
+ * Class Domain contain name of domain, domain id and courses to be offered in the domain*/
+
 package Academic_ERP.bean;
 
 import org.hibernate.annotations.NaturalId;

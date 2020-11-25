@@ -1,3 +1,7 @@
+/*Tests defined in this module ensures that objects created of the slot are being assigned
+ * values as expected and returns a valid output for attribute slot number. It aslo ensures the
+ * java method toString() is being overridden properly*/
+
 package Academic_ERP.bean;
 
 import org.junit.jupiter.api.Test;
@@ -14,13 +18,21 @@ class SlotTest {
 
     @Test
     void setSlotNo() {
+
         Slot slt = new Slot();
         slt.setSlotNo(10);
+        assertEquals(slt.getSlotNo(), 10);
+
     }
 
     @Test
     void testToString() {
-        Slot slt = new Slot(7);
-        assertEquals(slt.getSlotNo(), 7);
+        Slot slt = new Slot(3);
+        slt.setId((long) 22);
+        //System.out.println(slt.toString());
+        String test = "Slot{id=22, slotNo=3}";
+        assertEquals(slt.toString(), test);
     }
+
+
 }

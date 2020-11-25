@@ -1,3 +1,9 @@
+/*This module defines all necessary functionalities the get the application running.
+* These functionalities include :
+* 1. Finding students enrolled in a course
+* 2. Retrieving name of courses in a slot for a specific domain
+* 3. Retrieving list of courses present in asked slot number*/
+
 package Academic_ERP.services;
 
 import Academic_ERP.bean.Course;

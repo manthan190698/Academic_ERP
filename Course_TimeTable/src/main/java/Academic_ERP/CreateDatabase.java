@@ -1,3 +1,8 @@
+/*This code is used to create database. It includes creation of mapping of professors with respective subjects
+* and students with their enrollment into subjects of interests.
+* Running this code will create sql database with tables Course, Domain, Domain_Course,
+* Enrolled, Slot, Slot_Course and Student*/
+
 package Academic_ERP;
 
 import Academic_ERP.bean.Course;
@@ -11,10 +16,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class    CreateDatabase {
+public class CreateDatabase {
 
     public static void main(String args[]){
+        utility();
+    }
 
+    public static int utility(){
         Domain MTechCSE = new Domain("MTech CSE");
         Domain MTechECE = new Domain("MTech ECE");
         Domain IMTechCSE = new Domain("IMTech CSE");
@@ -35,28 +43,11 @@ public class    CreateDatabase {
         String []IMtcsFnames = {"Muralidhara V N","Vikram Pai","Akshatha Shetty","Naveen Rai","Venkateshwara Bhat","Sidhaarth Mallya","Random guy"};
         String []MtecFnames = {"Varun Rao","Gopalakrishna Adiga","U B Mahadeva Swamy","Sudarshan Patil Kulkarni","Tom Cruise","Ramya Bhat","Rakesh"};
 
-        int noCoursesPerSem = 7;
+        //int noCoursesPerSem = 7;
 
-       /* int noCoursesPerSem = 7;
-
-        for(int i=0;i<noCoursesPerSem;i++){
-            Course MtcsCourse = new Course(MtcsCid[i],MtcsCnames[i],MtcsFnames[i]);
-            Course MtecCourse = new Course(MtecCid[i],MtecCnames[i],MtecFnames[i]);
-            Course IMtcsCourse = new Course(IMtcsCid[i],IMtcsCnames[i],IMtcsFnames[i]);
-
-            MtcsCourses.add(MtcsCourses.size(),MtcsCourse);
-            MtecCourses.add(MtecCourses.size(),MtecCourse);
-            IMtcsCourses.add(IMtcsCourses.size(),IMtcsCourse);
-
-            MTechCSE.addCourseToDomain(MtcsCourse);
-            MTechECE.addCourseToDomain(MtecCourse);
-            IMTechCSE.addCourseToDomain(IMtcsCourse);
-        } */
-
-
-        MtcsCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,MTechCSE,noCoursesPerSem);
-        MtecCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,MTechECE,noCoursesPerSem);
-        IMtcsCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,IMTechCSE,noCoursesPerSem);
+        MtcsCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,MTechCSE,7);
+        MtecCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,MTechECE,7);
+        IMtcsCourses = RegisterCourses(MtcsCid,MtcsCnames,MtcsFnames,IMTechCSE,7);
 
         List<Student> MtcsStudents = new ArrayList<>();
         List<Student> MtecStudents = new ArrayList<>();
@@ -67,64 +58,18 @@ public class    CreateDatabase {
         String[] IMtcsSnames = {"Rajath Singh","Rohith Shetty","Kanika Nayak","Supriya Acharya","Vivek Bhat","Raghavendra","Prashanth","Prathibha"};
 
         /* Enrolling Students */
-        int seed  = 10;
-        Random random  = new Random(seed);
 
-        MtcsStudents = EnrollStudents(MtcsSnames,MtcsCourses,random,"MT2019CS",noCoursesPerSem);
-        MtecStudents = EnrollStudents(MtecSnames,MtecCourses,random,"MT2019EC",noCoursesPerSem);
-        IMtcsStudents = EnrollStudents(IMtcsSnames,IMtcsCourses,random,"IMT2019CS",noCoursesPerSem);
 
-/*        for(int i=0;i< MtcsSnames.length;i++){
-            Student student = new Student("MT2019CS"+(i+1),MtcsSnames[i]);
-            int taken = 0;
-            for(int courseNo=0;courseNo<noCoursesPerSem;courseNo++) {
-                if((random.nextInt(2)==1) && taken<4){
-                    student.enrollCourse(MtcsCourses.get(courseNo));
-                    MtcsCourses.get(courseNo).enrollStudent(student);
-                    taken += 1;
-                }
-            }
-            MtcsStudents.add(student);
-        }
-
-        for(int i=0;i< MtecSnames.length;i++){
-            Student student = new Student("MT2019EC"+(i+1),MtecSnames[i]);
-            int taken = 0;
-            for(int courseNo=0;courseNo<noCoursesPerSem;courseNo++) {
-                if((random.nextInt(2)==1) && taken<4) {
-                    System.out.println("Enrolling to course : "+courseNo);
-                    student.enrollCourse(MtecCourses.get(courseNo));
-                    MtecCourses.get(courseNo).enrollStudent(student);
-                    taken += 1;
-                }
-            }
-            MtecStudents.add(student);
-        }
-
-        for(int i=0;i< IMtcsSnames.length;i++){
-            Student student = new Student("IMT2019CS"+(i+1),IMtcsSnames[i]);
-            int taken = 0;
-            for(int courseNo=0;courseNo<noCoursesPerSem;courseNo++) {
-                if((random.nextInt(2)==1) && taken<4) {
-                    student.enrollCourse(IMtcsCourses.get(courseNo));
-                    IMtcsCourses.get(courseNo).enrollStudent(student);
-                    taken += 1;
-                }
-            }
-            IMtcsStudents.add(student);
-        }
-        */
-
+        MtcsStudents = EnrollStudents(MtcsSnames,MtcsCourses,"MT2019CS",7);
+        MtecStudents = EnrollStudents(MtecSnames,MtecCourses,"MT2019EC",7);
+        IMtcsStudents = EnrollStudents(IMtcsSnames,IMtcsCourses,"IMT2019CS",7);
 
         /* Assign Slots */
 
         List<Slot> slots = new ArrayList<>();
 
-        int noSlots = 20;
 
-        for(int i=0;i<noSlots;i++){
-            slots.add(new Slot(i+1));
-        }
+        slots = createSlots(20);
 
         /* MTech cs time table */
         slots.get(0).addCourseToSlot(MtcsCourses.get(0));
@@ -168,6 +113,8 @@ public class    CreateDatabase {
         slots.get(14).addCourseToSlot(IMtcsCourses.get(5));
         slots.get(17).addCourseToSlot(IMtcsCourses.get(3));
 
+
+        /*
         Session session = SessionUtil.getSession();
         session.beginTransaction();
 
@@ -206,10 +153,25 @@ public class    CreateDatabase {
 
         session.getTransaction().commit();
         session.close();
+        */
+
+
+        return 0;
+    }
+
+    public static List<Slot> createSlots(int noSlots){
+        List<Slot> slots = new ArrayList<>();
+        int count = 0;
+        for(int i=0;i<noSlots;i++){
+            slots.add(new Slot(i+1));
+            count++;
+            if(count==noSlots)
+                break;
+        }
+        return slots;
     }
 
     public static  List<Course> RegisterCourses(String courseIds[],String courseNames[],String facultyNames[],Domain domain,int noCoursesPerSem){
-
         List<Course> courses = new ArrayList<>();
         for(int i=0;i<noCoursesPerSem;i++){
             Course course = new Course(courseIds[i],courseNames[i],facultyNames[i]);
@@ -222,7 +184,11 @@ public class    CreateDatabase {
         return courses;
     }
 
-    public static List<Student> EnrollStudents(String []studentNames,List<Course> courses,Random random,String prefix,int noCoursesPerSem){
+    public static List<Student> EnrollStudents(String []studentNames,List<Course> courses,
+                                               String prefix,int noCoursesPerSem){
+        //int seed  = 10;
+        Random random  = new Random(10);
+
         List<Student> students = new ArrayList<>();
         for(int i=0;i< studentNames.length;i++) {
             Student student = new Student(prefix + (i + 1), studentNames[i]);
@@ -241,7 +207,5 @@ public class    CreateDatabase {
         }
         return students;
     }
-
-
 
 }
