@@ -24,103 +24,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f00ef965-4b1e-4888-b506-e87f48562cc1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/CreateDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Academic_ERP/CreateDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/bean/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Academic_ERP/bean/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/bean/Course_Min.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Academic_ERP/bean/Course_Min.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/bean/Domain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Academic_ERP/bean/Domain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/bean/Slot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Academic_ERP/bean/Slot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/bean/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Academic_ERP/bean/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/bean/Student_Min.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Academic_ERP/bean/Student_Min.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/controllers/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Academic_ERP/controllers/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Academic_ERP/services/CourseServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Academic_ERP/services/CourseServicesImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Academic_ERP/CreateDatabaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Academic_ERP/CreateDatabaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Academic_ERP/bean/CourseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Academic_ERP/bean/CourseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Academic_ERP/bean/Course_MinTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Academic_ERP/bean/Course_MinTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Academic_ERP/bean/SlotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Academic_ERP/bean/SlotTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Academic_ERP/controllers/CourseControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Academic_ERP/controllers/CourseControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Academic_ERP/services/CourseServicesImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Academic_ERP/services/CourseServicesImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Academic_ERP/CreateDatabase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Academic_ERP/CreateDatabase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Academic_ERP/bean/Course_Min.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Academic_ERP/bean/Course_Min.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Academic_ERP/controllers/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Academic_ERP/controllers/CourseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Academic_ERP/services/CourseServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Academic_ERP/services/CourseServicesImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Academic_ERP/util/SessionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Academic_ERP/util/SessionUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011211609/Academic_ERP.bean/Course_Min.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011211609/Academic_ERP.bean/Slot.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011211609/Academic_ERP.bean/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011211609/Academic_ERP.controllers/CourseController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011211609/Academic_ERP.controllers/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011211609/Academic_ERP.services/CourseServicesImpl.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011211609/Academic_ERP.services/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011211609/Academic_ERP/App.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011211609/Academic_ERP/CreateDatabase.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011211609/Academic_ERP/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011211609/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011211609/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011222310/Academic_ERP.bean/Course_Min.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011222310/Academic_ERP.bean/Slot.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011222310/Academic_ERP.bean/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011222310/Academic_ERP.controllers/CourseController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011222310/Academic_ERP.controllers/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011222310/Academic_ERP.services/CourseServicesImpl.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011222310/Academic_ERP.services/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011222310/Academic_ERP/App.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011222310/Academic_ERP/CreateDatabase.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011222310/Academic_ERP/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011222310/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011222310/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011230004/Academic_ERP.bean/Course_Min.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011230004/Academic_ERP.bean/Slot.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011230004/Academic_ERP.bean/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011230004/Academic_ERP.controllers/CourseController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011230004/Academic_ERP.controllers/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011230004/Academic_ERP.services/CourseServicesImpl.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011230004/Academic_ERP.services/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011230004/Academic_ERP/CreateDatabase.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011230004/Academic_ERP/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011230004/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011230004/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231039/Academic_ERP.bean/Course_Min.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231039/Academic_ERP.bean/Slot.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231039/Academic_ERP.bean/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231039/Academic_ERP.controllers/CourseController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231039/Academic_ERP.controllers/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231039/Academic_ERP.services/CourseServicesImpl.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231039/Academic_ERP.services/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231039/Academic_ERP/App.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231039/Academic_ERP/CreateDatabase.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231039/Academic_ERP/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231039/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231039/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231047/Academic_ERP.bean/Course_Min.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231047/Academic_ERP.bean/Slot.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231047/Academic_ERP.bean/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231047/Academic_ERP.controllers/CourseController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231047/Academic_ERP.controllers/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231047/Academic_ERP.services/CourseServicesImpl.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231047/Academic_ERP.services/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231047/Academic_ERP/App.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231047/Academic_ERP/CreateDatabase.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231047/Academic_ERP/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231047/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231047/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231100/Academic_ERP.bean/Course_Min.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231100/Academic_ERP.bean/Slot.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231100/Academic_ERP.bean/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231100/Academic_ERP.controllers/CourseController.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231100/Academic_ERP.controllers/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231100/Academic_ERP.services/CourseServicesImpl.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231100/Academic_ERP.services/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231100/Academic_ERP/App.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231100/Academic_ERP/CreateDatabase.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231100/Academic_ERP/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231100/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202011231100/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Academic_ERP/CreateDatabaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Academic_ERP/CreateDatabaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Academic_ERP/bean/CourseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Academic_ERP/bean/CourseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Academic_ERP/bean/SlotTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Academic_ERP/bean/SlotTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Academic_ERP/controllers/CourseControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Academic_ERP/controllers/CourseControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Academic_ERP/services/CourseServicesImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Academic_ERP/services/CourseServicesImplTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +53,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -161,20 +68,19 @@
       <recent name="" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="JUnit.CourseControllerTest">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CourseControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Course_TimeTable" />
       <extension name="coverage">
@@ -271,7 +177,10 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f00ef965-4b1e-4888-b506-e87f48562cc1" name="Default Changelist" comment="" />
@@ -298,12 +207,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="199" y="27" width="1024" height="741" key="#Project_Structure" timestamp="1606282327258">

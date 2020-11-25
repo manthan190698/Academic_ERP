@@ -7,7 +7,7 @@
 * subjects per semester or not.
 * 4. Method isEnrollingValid() cross verifies that once the student are enrolled into courses, all basic
 * criteria like students per course, courses per semester are met or not
-* 5. method testUtility() is created for the pupose of line coverage so that all the initializations from
+* 5. method testUtility() is created for the purpose of line coverage so that all the initializations from
 * method should be tested for the above defined testing methods.*/
 
 package Academic_ERP;

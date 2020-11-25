@@ -1,5 +1,5 @@
 /*Tests defined in this module ensures that objects created of the slot are being assigned
- * values as expected and returns a valid output for attribute slot number. It aslo ensures the
+ * values as expected and returns a valid output for attribute slot number. It also ensures the
  * java method toString() is being overridden properly*/
 
 package Academic_ERP.bean;
